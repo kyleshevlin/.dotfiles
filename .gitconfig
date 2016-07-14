@@ -1,0 +1,37 @@
+[user]
+  name = Kyle Shevlin
+  email = kyle.a.shevlin@gmail.com
+
+[github]
+  user = "kyleshevlin"
+
+[core]
+  editor = open -a 'Sublime Text'
+  excludesfile = ~/.gitignore_global
+
+[color]
+  ui = true
+
+[alias]
+  br = branch
+  brm = branch --merged
+  brrm = branch -r --merged
+  brnm = branch --no-merged
+  brrnm = branch -r --no-merged
+  ci = commit
+  co = checkout
+  copl = "!f() { git checkout $1 && git pull --rebase origin $1; }; f"
+  df = diff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  mg = merge
+  st = status
+  plo = pull --rebase origin
+  pho = push origin
+  plod = pull --rebase origin dev
+  phod = push origin dev
+  plos = pull --rebase origin stage
+  phos = push origin stage
+  plom = pull --rebase origin master
+  phom = push origin master
+  reaper-nokill = remote prune --dry-run origin
+  reaper = remote prune origin

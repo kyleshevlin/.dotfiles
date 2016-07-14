@@ -1,0 +1,14 @@
+# Make Tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# List all matches in case multiple possible completions are possible
+set show-all-if-ambiguous on
+
+# Show all autocomplete results at once
+set page-completions off
+
+# If there are more than 200 possible completions for a word, ask to show them all
+set completion-query-items 200
+
+# Flip through autocompletion matches with Shift-Tab.
+"\e[Z": menu-complete
