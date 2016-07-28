@@ -61,3 +61,6 @@ alias spoton="sudo mdutil -a -i on"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Update Ember
+alias upember="npm uninstall -g ember-cli; npm cache clean; bower cache clean; npm install -g ember-cli"
