@@ -10,6 +10,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Add NVM and load it
+export NVM_DIR="/Users/kyle/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 # Turn command line colors on
 export CLICOLOR=1
 
