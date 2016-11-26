@@ -16,6 +16,9 @@ alias sp="cd ~/SideProjects"
 alias g="git"
 alias e="ember"
 alias r="rails"
+alias rn="react-native"
+alias rni="react-native run-ios"
+alias rna="react-native run-android"
 
 # List all, long form
 alias la="ls -la"

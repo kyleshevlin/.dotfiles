@@ -25,3 +25,8 @@ export EDITOR='subl -w'
 
 # Stop Git from asking for merge messages
 export GIT_MERGE_AUTOEDIT=no
+
+# React Native Android
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
