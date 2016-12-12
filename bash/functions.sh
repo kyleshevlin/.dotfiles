@@ -77,38 +77,7 @@ function wpparse () {
   ruby -r "/Users/kyle/Projects/wpparser/wpparser.rb" -e "WPParser.new.parse '${file_name}'"
 }
 
-# Get this branch going
-# function go () {
-#   cliclick w:500
-#   cliclick kd:cmd
-#   cliclick t:'d'
-#   cliclick ku:cmd
-#   cliclick t:"rails s"
-#   cliclick kp:return
-#   cliclick kd:cmd
-#   cliclick t:'['
-#   cliclick ku:cmd
-#   subl .
-#   cliclick kp:return
-#   cliclick w:500
-#   fullscreen
-#   alfred "chrome"
-#   alfred "lh 3000"
-#   alfred "subl"
-# }
-
-# function alfred () {
-#   cliclick w:500
-#   cliclick kd:alt
-#   cliclick kp:space
-#   cliclick ku:alt
-#   cliclick t:"$@"
-#   cliclick kp:return
-# }
-
-# function fullscreen () {
-#   cliclick w:500
-#   cliclick kd:cmd,ctrl
-#   cliclick t:'f'
-#   cliclick ku:cmd,ctrl
-# }
+function nametab () {
+  echo -ne "\033]0;"$@"\007"
+}
+alias nt="nametab"
