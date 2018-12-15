@@ -6,6 +6,7 @@ get_git_branch() {
 
 # Assemble the Git part of prompt
 git_prompt () {
+  # Not Git, don't add to prompt
   if ! git rev-parse --git-dir > /dev/null 2>&1; then
     return 0
   fi
@@ -19,6 +20,16 @@ git_prompt () {
   fi
 
   echo " [$git_color$git_branch${c_reset}]"
+}
+
+# Get Node Version
+get_node_version () {
+  echo $(node -v)
+}
+
+# Add Node to prompt
+node_prompt () {
+  echo " $c_node_version$(get_node_version)"
 }
 
 # Make a directory && cd into that directory

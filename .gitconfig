@@ -6,7 +6,7 @@
   user = "kyleshevlin"
 
 [core]
-  editor = open -a 'Sublime Text'
+  editor = "vim"
   excludesfile = ~/.gitignore_global
 
 [color]
@@ -35,3 +35,5 @@
   phom = push origin master
   reaper-nokill = remote prune --dry-run origin
   reaper = remote prune origin
+  upbr = "!f() { git fetch && git rebase origin/master; }; f"
+
