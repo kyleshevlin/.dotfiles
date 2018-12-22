@@ -29,11 +29,8 @@
   pho = push origin
   plod = pull --rebase origin dev
   phod = push origin dev
-  plos = pull --rebase origin stage
-  phos = push origin stage
   plom = pull --rebase origin master
   phom = push origin master
   reaper-nokill = remote prune --dry-run origin
   reaper = remote prune origin
   upbr = "!f() { git fetch && git rebase origin/master; }; f"
-
