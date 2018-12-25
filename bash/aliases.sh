@@ -5,6 +5,12 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
+# NPM Aliases
+alias nrb="npm run build"
+alias nrs="npm run start"
+alias nrt="npm run test"
+alias nrtw="npm run test:watch"
+
 # Directory Aliases
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -12,27 +18,8 @@ alias wk="cd ~/Work"
 alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
 
-# Command Aliases
-alias g="git"
-alias e="ember"
-alias r="rails"
-alias rn="react-native"
-alias rni="react-native run-ios"
-alias rna="react-native run-android"
-
 # List all, long form
 alias la="ls -la"
-
-# Capistrano aliases
-alias capdp="cap deploy -S loc=prod"
-alias capds="cap deploy -S loc=stage -S branch=stage"
-alias capdd="cap deploy -S loc=dev -S branch=dev"
-alias cap3dp="cap prod deploy"
-alias cap3ds="cap stage deploy"
-alias cap3dd="cap dev deploy"
-alias capp="cap deploy -S loc=prod || cap prod deploy"
-alias caps="cap deploy -S loc=stage -S branch=stage || cap stage deploy"
-alias capd="cap deploy -S loc=dev -S branch=dev || cap dev deploy"
 
 # Copy PWD to Clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
@@ -41,7 +28,7 @@ alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
 alias pl="git copl $(get_git_branch)"
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
@@ -67,3 +54,4 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
+
