@@ -10,6 +10,7 @@ alias nrb="npm run build"
 alias nrs="npm run start"
 alias nrt="npm run test"
 alias nrtw="npm run test:watch"
+alias nrd="npm run deploy"
 
 # Directory Aliases
 alias dl="cd ~/Downloads"
@@ -17,6 +18,7 @@ alias dt="cd ~/Desktop"
 alias wk="cd ~/Work"
 alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
+alias blog="cd ~/Work/blog"
 
 # List all, long form
 alias la="ls -la"
@@ -54,4 +56,3 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
-

@@ -4,12 +4,6 @@ export PATH="/usr/local/bin:$PATH"
 # Add MySQL to PATH
 export PATH="/usr/local/mysql/bin:$PATH"
 
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Load NVM
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
 
@@ -22,11 +16,8 @@ export CLICOLOR=1
 # Set ls command colors
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Set Sublime Text as editor
-export EDITOR='subl -w'
+# Set VSCode as editor
+export EDITOR='code -w'
 
 # Stop Git from asking for merge messages
 export GIT_MERGE_AUTOEDIT=no
-
-# Elm Format
-export PATH=${PATH}:${HOME}/elm-format

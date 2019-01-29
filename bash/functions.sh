@@ -36,7 +36,7 @@ node_prompt () {
 function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 # Rename all directories to lowercase
-function mvdirslower () {
+function lowercaseAllDirs () {
   for f in *; do
     if [[ -d "$f" && ! -L "$f" ]]; then
       local LOWERDIR="$( echo $f | tr '[:upper:]' '[:lower:]')"
@@ -47,24 +47,3 @@ function mvdirslower () {
     fi
   done
 }
-
-# Create a new rvm gemset, touch a .rvmrc file, and write to .rvmrc file
-function creatervm () {
-  local version_and_name=$1
-
-  rvm use $version_and_name --create
-  touch .rvmrc
-  echo "rvm use ruby-${version_and_name}" > .rvmrc
-}
-alias crvm="creatervm"
-
-# Run the WP Parser on a given file
-function wpparse () {
-  local file_name=$1
-  ruby -r "/Users/kyle/Projects/wpparser/wpparser.rb" -e "WPParser.new.parse '${file_name}'"
-}
-
-function nametab () {
-  echo -ne "\033]0;"$@"\007"
-}
-alias nt="nametab"
