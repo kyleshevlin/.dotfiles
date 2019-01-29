@@ -7,6 +7,3 @@ fi
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
-
-# Grunt Tab Completion
-eval "$(grunt --completion=bash)"
