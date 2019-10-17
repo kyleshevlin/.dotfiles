@@ -1,6 +1,6 @@
 [user]
   name = Kyle Shevlin
-  email = kyle.a.shevlin@gmail.com
+  email = kyle.s@webflow.com
 
 [github]
   user = "kyleshevlin"
@@ -20,17 +20,19 @@
   brrnm = branch -r --no-merged
   ci = commit
   co = checkout
-  copl = "!f() { git checkout $1 && git pull --rebase origin $1; }; f"
+  copl = "!f() { git checkout $1 && git pull origin $1; }; f"
   df = diff
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   mg = merge
   st = status
-  plo = pull --rebase origin
+  plo = pull origin
   pho = push origin
-  plod = pull --rebase origin dev
+  plod = pull origin dev
   phod = push origin dev
-  plom = pull --rebase origin master
+  plom = pull origin master
   phom = push origin master
   reaper-nokill = remote prune --dry-run origin
   reaper = remote prune origin
   upbr = "!f() { git fetch && git rebase origin/master; }; f"
+  updev="!f() { git checkout dev && git pull origin dev && git checkout - && git merge dev; }; f"
+

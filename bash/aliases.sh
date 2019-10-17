@@ -23,8 +23,15 @@ alias blog="cd ~/Work/blog"
 # List all, long form
 alias la="ls -la"
 
+# Clear the pane
+alias kl="clear"
+
 # Copy PWD to Clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
+
+# Cat package.json
+alias catpac="cat package.json"
+alias ctpc="catpac"
 
 # Git command aliases that need to run from bash, not gitconfig
 alias pl="git copl $(get_git_branch)"
@@ -56,3 +63,10 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
+
+# Open my brag document in vim quickly
+alias brag="vim ~/Desktop/BRAG_DOC.md"
+
+# Open my todos/where I left off document
+alias todo="vim ~/Desktop/WHERE_I_LEFT_OFF.md"
+
