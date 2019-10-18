@@ -4,6 +4,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias cdg='cd $(git rev-parse --show-toplevel)' # cd into git project root
 
 # NPM Aliases
 alias nrb="npm run build"
