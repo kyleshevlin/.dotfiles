@@ -6,11 +6,28 @@
   user = "kyleshevlin"
 
 [core]
-  editor = "vim"
+  editor = "code --wait"
   excludesfile = ~/.gitignore_global
+  pager = "diff-so-fancy | less --tabs=2 -RFX"
 
 [color]
   ui = true
+
+# The following are for diff-so-fancy
+[color "diff-highlight"]
+  oldNormal = "red bold"
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
+
+[color "diff"]
+  meta = "11"
+  frag = "magenta bold"
+  commit = "yellow bold"
+  old = "red bold"
+  new = "green bold"
+  whitespace = "red reverse"
+# end diff-so-fancy config
 
 [alias]
   br = branch
@@ -18,6 +35,8 @@
   brrm = branch -r --merged
   brnm = branch --no-merged
   brrnm = branch -r --no-merged
+  # List all local git branches and the date of last commit
+  blist = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:green)%(committerdate:relative)%(color:reset) - %(authorname)'
   ci = commit
   co = checkout
   copl = "!f() { git checkout $1 && git pull origin $1; }; f"

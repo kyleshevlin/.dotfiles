@@ -18,7 +18,9 @@ alias dt="cd ~/Desktop"
 alias wk="cd ~/Work"
 alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
-alias blog="cd ~/Work/blog"
+
+# Trash instead of rm
+alias rm="trash"
 
 # List all, long form
 alias la="ls -la"
@@ -64,9 +66,21 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
 
-# Open my brag document in vim quickly
-alias brag="vim ~/Desktop/BRAG_DOC.md"
+# Get to work
+alias blog="cd ~/Work/blog && code ."
+alias jed="cd ~/JustEnoughDev/website && code ."
+
+# Open my brag document
+alias brag="code ~/Desktop/BRAG_DOC_2020.md"
 
 # Open my todos/where I left off document
-alias todo="vim ~/Desktop/WHERE_I_LEFT_OFF.md"
+alias todo="code ~/Desktop/WHERE_I_LEFT_OFF.md"
 
+# Webflow specific aliases
+alias yf="yarn flow"
+alias yrtw="yarn run jest:watch"
+alias yrc="yarn run cypress-ui"
+
+# Docker Containers
+alias dockerstopall="docker stop $(docker ps -q)"
+alias dockerkillall="docker kill $(docker ps -q)"
