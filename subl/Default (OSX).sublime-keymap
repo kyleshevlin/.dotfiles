@@ -1,9 +1,0 @@
-[
-  { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+shift+v"], "command": "paste" },
-  { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces"},
-  { "keys": ["ctrl+shift+alt+t"], "command": "toggle_trailing_spaces" },
-  { "keys": ["super+alt+b"], "command": "toggle_side_bar" },
-  { "keys": ["super+alt+ctrl+a"], "command": "alignment" },
-  { "keys": ["super+alt+w"], "command": "close_all" }
-]
