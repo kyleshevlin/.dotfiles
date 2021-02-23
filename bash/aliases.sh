@@ -18,7 +18,9 @@ alias dt="cd ~/Desktop"
 alias wk="cd ~/Work"
 alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
-alias blog="cd ~/Work/blog"
+
+# Trash instead of rm
+alias rm="trash"
 
 # Clear the terminal
 alias kl="clear"
@@ -26,8 +28,15 @@ alias kl="clear"
 # List all, long form
 alias la="ls -la"
 
+# Clear the pane
+alias kl="clear"
+
 # Copy PWD to Clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
+
+# Cat package.json
+alias catpac="cat package.json"
+alias ctpc="catpac"
 
 # Git command aliases that need to run from bash, not gitconfig
 alias pl="git copl $(get_git_branch)"
@@ -62,3 +71,22 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
+
+# Get to work
+alias blog="cd ~/Work/blog && code ."
+alias jed="cd ~/JustEnoughDev/website && code ."
+
+# Open my brag document
+alias brag="code ~/Desktop/BRAG_DOC_2020.md"
+
+# Open my todos/where I left off document
+alias todo="code ~/Desktop/WHERE_I_LEFT_OFF.md"
+
+# Webflow specific aliases
+alias yf="yarn flow"
+alias yrtw="yarn run jest:watch"
+alias yrc="yarn run cypress-ui"
+
+# Docker Containers
+alias dockerstopall="docker stop $(docker ps -q)"
+alias dockerkillall="docker kill $(docker ps -q)"
