@@ -20,6 +20,9 @@ alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
 alias blog="cd ~/Work/blog"
 
+# Clear the terminal
+alias kl="clear"
+
 # List all, long form
 alias la="ls -la"
 
@@ -28,6 +31,9 @@ alias cpwd="pwd | tr -d '\n' | pbcopy && echo 'pwd copied to clipboard'"
 
 # Git command aliases that need to run from bash, not gitconfig
 alias pl="git copl $(get_git_branch)"
+
+# Display the contents of package.json
+alias catpac="cat package.json"
 
 # Recursively delete `.DS_Store` files
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
