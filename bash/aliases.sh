@@ -20,6 +20,9 @@ alias pra="cd ~/Practice"
 alias sp="cd ~/SideProjects"
 alias blog="cd ~/Work/blog"
 
+# Trash instead of rm
+alias rm="trash"
+
 # Clear the terminal
 alias kl="clear"
 
@@ -34,6 +37,7 @@ alias pl="git copl $(get_git_branch)"
 
 # Display the contents of package.json
 alias catpac="cat package.json"
+alias ctpc="catpac"
 
 # Recursively delete `.DS_Store` files
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
@@ -62,3 +66,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Launch VSCode in teaching mode
 alias teach="code --extensions-dir ~/code_profiles/egghead/exts --user-data-dir ~/code_profiles/egghead/data"
+
+# Get to work on stuff
+alias blog="cd ~/Work/blog && code ."
