@@ -24,3 +24,6 @@ export GIT_MERGE_AUTOEDIT=no
 
 # Stop bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# NPM_TOKEN for Virta repos
+export NPM_TOKEN=$(gcloud secrets versions access latest --secret=NPM_TOKEN)
